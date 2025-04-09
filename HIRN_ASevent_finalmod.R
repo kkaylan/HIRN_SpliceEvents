@@ -4,8 +4,8 @@ library(magrittr)
 
 # Skipped Exon (SE) -------------------------------------------------------
 
-se_data <- readRDS(file = "file/path/to/se_data.rds")
-se_metadata <- readRDS(file = "file/path/to/se_metadata.rds")
+se_data <- readRDS(file = "data.tar/se_data.rds")
+se_metadata <- readRDS(file = "data.tar/se_metadata.rds")
 
 # merge data and metadata and convert to more compact dataframe
 se_traintest <- dplyr::left_join(se_metadata, se_data, by = "MergeID") %>%
